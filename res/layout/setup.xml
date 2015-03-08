@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView 
+        android:text="@string/str_phone" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/textView1"/>
+
+    <EditText 
+        android:id="@+id/phoneNumber" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/textView1"
+        android:inputType="phone"/>
+    <TextView 
+        android:text="@string/str_message" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/textView2"
+        android:layout_below="@+id/phoneNumber" />
+    <EditText 
+        android:id="@+id/message" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:inputType="text"
+        android:layout_below="@+id/textView2" >
+    </EditText>
+ 
+	<TextView 
+        android:text="@string/str_voice" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/textView3"
+        android:layout_below="@+id/message"/>
+	
+    <EditText 
+        android:id="@+id/voice_sos" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:inputType="text"
+        android:layout_below="@+id/textView3" >
+    </EditText>
+                
+    <LinearLayout
+        android:id="@+id/laytbtns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/voice_sos" >
+    <Button 
+        android:id="@+id/btSet" 
+        android:layout_height="wrap_content" 
+        android:layout_width="0dp" 
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:text="@string/str_setting"></Button>
+    <Button 
+        android:id="@+id/btBack" 
+        android:layout_height="wrap_content" 
+        android:layout_width="0dp" 
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:text="@string/str_back"></Button>
+    
+    </LinearLayout>
+   
+</RelativeLayout>
+
